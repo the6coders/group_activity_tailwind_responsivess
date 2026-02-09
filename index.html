@@ -10,58 +10,71 @@
 
 <body class="bg-black/55 bg-[url('images/images.jpg')] bg-cover bg-blend-multiply bg-fixed">
 
-    <nav class=" fixed top-0 w-full  flex flex-col gap-3 *:px-5 bg-white z-20">
-        <div class="w-50 py-5 ">
+    <!-- nav secation -->
+    <nav class="flex flex-col gap-3 md:justify-between *:px-5 bg-white z-10  md:grid md:grid-cols-2 md:pt-5 lg:grid-cols-4">
+        <div class="w-50 py-5 lg:py-2">
             <img src="images/logo_iconn.png" alt="" class="">
         </div>
-        <div class="order-3  flex gap-5 justify-center bg-gray-100 py-5 ">
+        <div class="order-3   flex gap-5 justify-center bg-gray-100 py-5
+                    md:col-span-2 lg:bg-white lg:py-2">
             <img src="images/computer.png" alt="">
             <img src="images/tablet.png" alt="">
             <img src="images/smartphone.png" alt="" class="rotate-90">
             <img src="images/smartphone.png" alt="">
         </div>
-        <div class="flex gap-4">
-            <p>try it for free <br>you risk nothing!</p>
-            <button class="bg-green-600 w-50 p-5 rounded-xl text-white font-semibold "> GET STARTED</button>
+        <div class="flex gap-4 lg:gap-1 lg:order-3">
+            <p>try it for free you risk nothing!</p>
+            <button class="bg-green-600 w-50 lg:w-[100px]  p-2 rounded-xl text-white font-semibold lg:font-normal "> GET STARTED</button>
         </div>
-
+        
     </nav>
 
-    <header class="px-5 relative mx-auto text-white py-5 pt-60 ">
+    <header class="px-5 relative   mx-auto text-white py-5 
+                    md:static md:pt-5 md:static ">
 
-        <div class="italic text-2xl mb-10">
+        <div class="italic text-2xl mb-5 flex justify-between">
             <h2 class="tracking-widest">Dorothy Collins</h2>
+            <img src="images/menu.png" alt="" class="text-white bg-white rounded-md">
 
         </div>
 
-        <p class="font-extrabold text-2xl tracking-widest w-70 mb-10">Psychotherapy that helps you find balance</p>
+        <p class="font-extrabold text-2xl tracking-widest w-70 md:w-full mb-10">Psychotherapy that helps you find balance</p>
 
-        <p class="text-justify w-80 leading-8 mb-10">
+        <p class="text-justify md:w-full leading-8 mb-10">
             Take care of your mental health and relationships by finding inner peace psychotherapy provides a space
             where you can better understand yourself, learn to manage stress, build self-confidence, and create healthy,
             fulfilling relationships. Together, we will find solutions that help you regain balance and live more fully.
 
         </p>
 
-        <div class="text-center hover:bg-white rounded-4xl hover:text-black border-1 border-white">
+        <button
+                class="max-sm:hidden rounded-2xl hover:bg-white  px-10 py-3">Schedule a
+                consultation
+        </button>
+
+        <div class=" text-center hover:bg-white rounded-4xl hover:text-black border-1 border-white
+                    md:hidden">
             <button
-                class="border-none  px-10 py-3  w-full ">Schedule a
+                class="border-none hover:bg-white  px-10 py-3  w-full ">Schedule a
                 consultation</button>
         </div>
 
 
-        <div class="hamburger  absolute top-61 right-10 right-5">
-            <img src="images/menu.png" alt="" class="text-white bg-white rounded-md">
-        </div>
+        <!-- <div class="hamburger  absolute top-61 right-10 right-5
+                    md:hidden">
+            
+        </div> -->
     </header>
 
-    <section class="bg-black text-white pl-5 py-5 md:flex">
-        <div class="w-85 mb-7 order-last">
+    <section class="bg-black w-full text-white py-5 md:bg-black/85
+               md:bg-[url('images/lady.jpg')] md:bg-cover md:bg-blend-multiply">
+        <div class="w-[90%] mx-auto order-last 
+                    md:hidden">
             <img src="images/lady.jpg" alt="" class="w-full">
         </div>
 
         <!-- this will b the parent div in table and lg-scrns when flex or grid -->
-        <div class=" [&_h2]:text-2xl [&_h2]:italic">
+        <div class=" [&_h2]:text-2xl mx-5 [&_h2]:italic md:px-10 [&_p]:text-justify">
 
             <div class="*:mb-7">
                 <h2>Education & <br> qualifications</h2>
@@ -105,18 +118,18 @@
     </section>
 
     <section class="flex flex-col gap-10 pl-5 mt-10 [&_h2]:text-3xl 
-                    [&_h2]:mb-10 *:leading-8 [&_p]:tracking-widest">
+                    [&_h2]:mb-3  md:[&_p]:mb-3 *:leading-8 [&_p]:tracking-widest md:px-20">
         <div>
             <div class="max-h-[70vh] border-2 border-white rounded-4xl pt-5 pl-5">
-                <div class="max-h-[70vh] w-full bg-white rounded-4xl  px-5 py-5">
+                <div class=" max-h-[70vh] w-full bg-white rounded-4xl  px-5 py-5 overflow-scroll">
 
                     <h2>Individual therapy</h2>
                     <p class="mb-10">Support for individuals facing anxiety, depression, life crises, low self-esteem,
                         or relationship
                         difficulties. We work on understanding emotions, shifting thought patterns, and building inner
-                        strength.</p>
+                         strength.</p>
 
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-5 md:flex-row md:pb-10">
                         <div class="flex gap-5 ">
                             <img src="images/clock.png" alt="" class="">
                             <p>50 min</p>
@@ -125,7 +138,7 @@
                             <img src="images/money.png" alt="">
                             <p>New York City</p>
                         </div>
-                        <div class="flex gap-5 ">
+                        <div class="flex gap-5">
                             <img src="images/location.png" alt="">
                             <p>$150</p>
                         </div>
@@ -135,13 +148,13 @@
         </div>
         <div>
             <div class="max-h-[70vh] border-2 border-white rounded-4xl pt-5 pl-5">
-                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5 ">
+                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5 overflow-scroll" >
 
                     <h2>Couples therapy</h2>
                     <p>Support for couples facing conflicts, communication issues, infidelity, or emotional crises. I
                         help partners understand each other better and rebuild their relationship.</p>
 
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-5 md:flex-row">
                         <div class="flex gap-5 ">
                             <img src="images/clock.png" alt="" class="">
                             <p>50 min</p>
@@ -163,13 +176,13 @@
             <div class="max-h-[70vh]] border-2 border-white rounded-4xl pt-5 pl-5">
 
 
-                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5">
+                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5 overflow-scroll">
                     <h2>Psychological consultations</h2>
                     <p>Psychological consultations are the first step in understanding difficulties and determining the
                         best
                         form of support. They provide a space for conversation, problem assessment, and establishing the
                         next therapeutic steps.</p>
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-5 md:flex-row">
                         <div class="flex gap-5 ">
                             <img src="images/clock.png" alt="" class="">
                             <p>50 min</p>
@@ -187,14 +200,13 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="mb-10">
             <div class="max-h-[70vh] border-2 border-white rounded-4xl pt-5 pl-5">
-                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5">
+                <div class="max-h-[70vh] bg-white rounded-4xl px-5 py-5 overflow-scroll">
 
                     <h2>Workshops & specialist training</h2>
                     <p>Group sessions on stress management, building self-esteem, and improving interpersonal
                         relationships.</p>
-
 
                     <div class="flex gap-5 ">
                         <img src="images/location.png" alt="">
@@ -207,14 +219,14 @@
         </div>
     </section>
 
-    <section class="bg-black text-white md:px-15 py-20 px-5 ">
-        <div>
+    <section class="bg-black text-white py-20 px-5 ">
+        <div class="text-3xl md:mb-5 md:w-120">
             <h2>Expert insights and inspiration –
                 a psychotherapist's blog</h2>
         </div>
 
         <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:w-[75%] md:border-r-2 md:border-r-white md:pr-20 text-left [&_button]:text-left  ">
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 md:w-[85%] md:mx-auto md:border-r-2 md:border-r-white  text-left [&_button]:text-left  ">
             <div class="flex flex-col gap-5 text-white">
                 <img src="images/lady.jpg" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta ducimus necessitatibus quibusdam
@@ -223,13 +235,13 @@
                 <button>Read more</button>
             </div>
             <div class="flex flex-col gap-5 text-white">
-                <img src="images/WhatsApp Image 2026-02-07 at 4.13.15 PM.jpeg" alt="" class="rounded-2xl">
+                 <img src="images/lady.jpg" alt="">
                 <p>here we sell beautify  outfit .heck this out, here we give your boby the best result. we give the best to our customers</p>
 
                 <button>Read more</button>
             </div>
             <div class="flex flex-col gap-5 text-white">
-                <img src="images/WhatsApp Image 2026-02-07 at 4.13.34 PM.jpeg" alt="" class="rounded-2xl">
+                <img src="images/lady.jpg" alt="">
                 <p>check this out, here we give your boby the best result. we give the best to our customers</p>
 
                 <button>Read more</button>
@@ -250,38 +262,38 @@
         </div>
     </section>
 
-    <section class="grid grid-cols-1 gap-5 px-2 *:text-white [&_p]:tracking-wider [&_p]:mt-5 mt-10">
-        <div class="py-5 px-4 rounded-2xl border-1 border-white bg-black/55 md:flex md:justify-between">
+    <section class="grid grid-cols-1 gap-5 px-2 *:text-white [&_p]:tracking-wider [&_p]:mt-5 mt-10 md:px-10">
+        <div class="py-5 px-4 rounded-2xl border-1 border-white bg-black/55 md:flex md:justify-between md:pl-10 md:items-center">
             <div>
                 <h2>Anna</h2>
                 <p>Age 34</p>
             </div>
 
-            <p>I felt immense relief when I found Dorothy Collins. Her approach is full of empathy and understanding,
+            <p class="md:w-[70%] text-justify">I felt immense relief when I found Dorothy Collins. Her approach is full of empathy and understanding,
                 which made me feel safe and comfortable throughout therapy. She helped me navigate a difficult period in
                 my life, understand my emotions, and find the balance I so desperately needed. Thanks to her, I’ve
                 learned to manage my anxiety and improve my relationships with others. I wholeheartedly recommend her!
             </p>
         </div>
-        <div class="py-5 px-4 rounded-4xl border-1 border-white bg-black/55 md:flex md:justify-between">
+        <div class="py-5 px-4 rounded-4xl border-1 border-white bg-black/55 md:flex md:justify-between md:pl-10 md:items-center">
             <div>
                 <h2>Elisabeth</h2>
                 <p>Age 49</p>
             </div>
 
-            <p>I highly recommend Dorothy Collins’ psychotherapy practice. It’s a place filled with warmth and
+            <p class="md:w-[70%] text-justify">I highly recommend Dorothy Collins’ psychotherapy practice. It’s a place filled with warmth and
                 understanding, where you can feel safe and at ease. Dorothy is an incredibly empathetic and professional
                 therapist who truly listens and helps you find your path to better well-being. Each session was a
                 valuable experience that allowed me to better understand myself and my emotions.</p>
 
         </div>
-        <div class="py-5 px-4 rounded-4xl border-1 border-white bg-black/55 md:flex md:justify-between mb-15">
+        <div class="py-5 px-4 rounded-4xl border-1 border-white bg-black/55 md:flex md:justify-between mb-15 md:pl-10 md:items-center">
             <div>
                 <h2>Michael</h2>
                 <p>Age 22</p>
             </div>
 
-            <p>Dorothy Collins’ practice is a space where you can find peace and support. She is an experienced and
+            <p class="md:w-[70%] text-justify">Dorothy Collins’ practice is a space where you can find peace and support. She is an experienced and
                 dedicated therapist, creating a welcoming atmosphere free from pressure or judgment. Through our
                 sessions, I have learned to cope with difficult situations and see many aspects of life from a new
                 perspective. I highly recommend her to anyone seeking effective psychotherapy.</p>
@@ -289,18 +301,20 @@
         </div>
     </section>
 
-    <section class="[&_h2]:text-2xl [&_h2]:italic bg-black *:text-white px-2">
-        <h2 class="text-center mb-10">sing up for a consultatio</h1>
+    <section class="[&_h2]:text-2xl [&_h2]:italic bg-black *:text-white px-2 md:px-10 md:py-10">
+        <h2 class="text-center mb-10">sing up for a consultatio
+
+        </h1>
 
         
-            <form action="">
+            <form action="" class="overflow-hidden">
                 <div class="pb-10 grid grid-cols-2 gap-3">
                     <div class="">
                         <label for="Name">Name</label>
-                        <input type="text" name="full-name" id="Name" class="bg-white rounded-md mt-3 py-3 text-black  border-none outline-none">
+                        <input type="text" name="full-name" id="Name" class="bg-white rounded-md mt-3 py-3 text-black  border-none outline-none ]">
                     </div>
 
-                    <div>
+                    <div class="w-[10%">
                         <label for="E-mail">Email</label>
                         <input type="text" name="Email" id="Email" required class="bg-white rounded-md mt-3 py-3 text-black border-none outline-none">
                     </div>
@@ -327,11 +341,11 @@
        
     </section>
 
-    <section class="bg-white py-10 px-5">
-        <h2 class="border-1 rounded-4xl px-5 text-2xl italic py-2 text-center font-extrabold tracking-widest">
+    <section class="bg-white py-10 px-5 md:[&_p]:text-center md:[&_p]:tracking-widest">
+        <h2 class="border-1 rounded-4xl px-5 text-2xl italic py-2 text-center font-extrabold tracking-widest md:w-[50%] mx-auto">
             Ozes-Collection
         </h2>
-        <div class="flex justify-center gap-5 mt-10">
+        <div class="flex justify-center gap-5 mt-10 md:mb-10">
             <img src="images/facebook.png" alt="">
             <img src="images/instagram.png" alt="">
         </div>
